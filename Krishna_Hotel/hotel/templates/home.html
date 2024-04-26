@@ -1,0 +1,47 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+    <style>
+        body {
+            background-image: url('{% static "images/Homepage5.jpg" %}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center; /* Center text on the page */
+            color:black; /* Text color, adjust as needed for visibility */
+            padding: 0px; /* Adjust padding as needed */
+        }
+
+        h1 {
+           margin: 0;
+           padding: 200px 0;
+            font-family: 'YourCustomFont', Brush Script MT;
+            font-size: 60px;
+            }
+         .btn btn-dark{
+            padding: 20px 30px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+    </style>
+<div align="center" >
+    <h1 >Welcome to Hotel Booking Management System
+    <br/>
+        <br/>   <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+    <br/>
+    <br/>
+    <br/>
+    <br/></h1>
+    <script>
+        function redirectToBookNow() {
+            // You can use window.location.href to navigate to the BookNow page
+            window.location.href = '/user/login';
+        }
+    </script>
+</div>
+{% endblock body %}

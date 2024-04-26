@@ -1,0 +1,45 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center text-success mt-4">Contact Page</h1>
+
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message:</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button class="btn btn-dark" onclick="redirectToBookNow()">Submit</button>
+                </form>
+                <script>
+                    function redirectToBookNow() {
+                        // You can use window.location.href to navigate to the BookNow page
+                        window.location.href = '/feedback';
+                    }
+                </script>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+
+
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

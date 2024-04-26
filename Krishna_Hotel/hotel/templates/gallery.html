@@ -1,0 +1,116 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+    <h1 class="text-center text-">Rooms&Suits</h1>
+    <script>
+        function redirectToBookNow() {
+            // You can use window.location.href to navigate to the BookNow page
+            window.location.href = '/payment';
+        }
+    </script>
+    <div class="row">
+        <!-- First Row: 4 Cards -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/1.jpg' %}" alt="Hotel Image 1" class="card-img-top img-fluid" style="max-height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Deluxe Room</h5>
+                    <p class="card-text">Price: Rs.1000</p>
+                    <p>Experience comfort without breaking the bank in our Standart Economic Double Room, ideal for budget-conscious travelers. Enjoy modern amenities and cozy accommodations perfect for couples or friends on a budget</p>
+                    <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/2.jpg' %}" alt="Hotel Image 2" class="card-img-top img-fluid" style="max-height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Studio Broadway Room</h5>
+                    <p class="card-text">Price: Rs.1000</p>
+                    <p>Discover simplicity and comfort in our Standart Economic Single rooms, tailored for solo travelers seeking affordability without compromising on quality. Experience a cozy retreat designed for rest and relaxation </p>
+                    <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/3.jpg' %}" alt="Hotel Image 3" class="card-img-top img-fluid" style="max-height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Standard Economic Single Room</h5>
+                    <p class="card-text">Price: Rs.1500</p>
+                    <p>Experience the epitome of creativity and comfort in our Studio Broadway Room, designed for artistic souls seeking inspiration. With ample space and unique decor, immerse yourself in a haven where imagination knows no bounds.</p>
+                    <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/4.jpg' %}" alt="Hotel Image 4" class="card-img-top img-fluid" style="max-height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Standard Double Room</h5>
+                    <p class="card-text">Price: Rs.1500</p>
+                    <p>Indulge in shared comfort and modern amenities with our Standart Double Room, perfect for couples or friends traveling together. Experience a harmonious blend of relaxation and convenience  shared moments and cozy retreats.</p>
+                    <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<br/>
+    <div class="row">
+        <!-- First Row: 4 Cards -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/5.jpg' %}" alt="Hotel Image 1" class="card-img-top img-fluid" style="max-height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Deluxe Room</h5>
+                    <p class="card-text">Price: Rs.1000</p>
+                    <p>Indulge in shared comfort and modern amenities with our Standart Double Room, perfect for couples or friends traveling together. Experience a harmonious blend of relaxation and convenience in a space designed for shared moments and cozy retreats</p>
+                   <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/6.jpg' %}" alt="Hotel Image 2" class="card-img-top img-fluid" style="max-height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Studio Broadway Room</h5>
+                    <p class="card-text">Price: Rs.1000</p>
+                    <p>Enjoy shared comfort in our Standart Double Room, designed for couples or friends seeking modern amenities and cozy accommodation. Experience relaxation and convenience in a space crafted for shared moments and serene retreats.</p>
+                    <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/7.jpg' %}" alt="Hotel Image 3" class="card-img-top img-fluid" style="max-height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Standard Economic Single Room</h5>
+                    <p class="card-text">Price: Rs.1500</p>
+                    <p>Discover affordability without compromising comfort in our Standart Economic Double Room, perfect for budget-conscious travelers seeking shared accommodation. Experience modern amenities and cozy retreats designed for couples or friends on a budget</p>
+                    <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/8.jpg' %}" alt="Hotel Image 4" class="card-img-top img-fluid" style="max-height: 200px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Standard Double Room</h5>
+                    <p class="card-text">Price: Rs.1500</p>
+                    <p>Experience spacious comfort and modern amenities in our Standart Big Room, perfect for those seeking extra room to relax and unwind. Enjoy ample space for a comfortable stay in this generously-sized accommodation option</p>
+                    <button class="btn btn-dark" onclick="redirectToBookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+{% endblock body %}

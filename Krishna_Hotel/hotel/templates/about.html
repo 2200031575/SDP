@@ -1,0 +1,39 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block body %}
+    <h1 class="text-center" style="font-size: 2em;">About Our Hotel</h1>
+
+    <p class="text-center mt-4" style="font-size: 1.3em;">
+        Welcome to our luxurious hotel, where comfort meets elegance. Our commitment is to provide an exceptional
+        experience for our guests, ensuring a memorable stay with top-notch amenities and impeccable service.
+
+        At our hotel, we pride ourselves on creating an atmosphere of warmth and sophistication. Whether you're
+        here for business or leisure, we strive to make your time with us truly special.
+
+        Explore the unique features of each room, indulge in exquisite dining, and discover the charm of our
+        surroundings. We look forward to hosting you and making your stay with us a delightful experience.
+    </p>
+
+    <!-- Add more content as needed -->
+    <div>
+        <h1 align="center" style="font-size: 2em;">Developed by</h1>
+    </div>
+
+    <div class="text-center">
+        <img src="{% static 'images/leela.jpg' %}" alt="Leela" class="contact-image">
+        <img src="{% static 'images/NANDINI.jpg' %}" alt="Nandini" class="contact-image">
+        <img src="{% static 'images/Govardhan.jpg' %}" alt="Govardhan" class="contact-image">
+    </div>
+
+    <style>
+        /* Add this style block to your HTML or in your CSS file */
+
+        .contact-image {
+            width: 200px; /* Set your desired width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 50px; /* Set margin between images */
+            border-radius: 50%;
+        }
+    </style>
+{% endblock body %}

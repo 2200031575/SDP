@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Booking Page{% endblock %}
+
+{% block content %}
+<div>
+    <header>
+        <div class="logo">
+            <a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">
+                <h1><i class="fas fa-user-graduate"></i> Fill your payment details here</h1>
+            </a>
+        </div>
+    </header>
+
+    <div class="content push-content">
+        <div class="container">
+            <h2>Booking Page</h2>
+            <form>
+                {% csrf_token %}
+                <label for="name">Name</label>
+                <input type="text" id="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required />
+
+                <label for="study-year">Type of event you want to select</label>
+                <select id="study-year" name="study-year" required>
+                    <option value="event1">Marriage Events</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="amount">Enter your Estimated Cost</label>
+                <input type="number" id="amount" required />
+
+                <button type="submit">Book Event</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div style="background-color: #084a92; padding: 10px; text-align: center; color: white;">
+            &copy; 2023 Student Grade Hub. All rights reserved.
+        </div>
+    </footer>
+</div>
+{% endblock %}
